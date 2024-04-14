@@ -13,6 +13,14 @@
 		C146FB612BCB443C00292129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C146FB5F2BCB443C00292129 /* Main.storyboard */; };
 		C146FB632BCB443D00292129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C146FB622BCB443D00292129 /* Assets.xcassets */; };
 		C146FB662BCB443D00292129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C146FB642BCB443D00292129 /* LaunchScreen.storyboard */; };
+		C146FB702BCB459500292129 /* ApiSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146FB6F2BCB459500292129 /* ApiSettings.swift */; };
+		C146FB722BCB45F600292129 /* ApiClientBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146FB712BCB45F600292129 /* ApiClientBase.swift */; };
+		C146FB742BCB469600292129 /* URLRequestDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146FB732BCB469600292129 /* URLRequestDescription.swift */; };
+		C146FB762BCB489100292129 /* StringUrlSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146FB752BCB489100292129 /* StringUrlSafe.swift */; };
+		C146FB782BCB49D100292129 /* RequestHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146FB772BCB49D100292129 /* RequestHeaders.swift */; };
+		C146FB7A2BCB4C5800292129 /* RequestRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146FB792BCB4C5800292129 /* RequestRoute.swift */; };
+		C146FB7C2BCB4E7A00292129 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146FB7B2BCB4E7A00292129 /* ApiError.swift */; };
+		C146FB7E2BCB538A00292129 /* BaseLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C146FB7D2BCB538A00292129 /* BaseLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		C146FB622BCB443D00292129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C146FB652BCB443D00292129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C146FB672BCB443D00292129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C146FB6F2BCB459500292129 /* ApiSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSettings.swift; sourceTree = "<group>"; };
+		C146FB712BCB45F600292129 /* ApiClientBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientBase.swift; sourceTree = "<group>"; };
+		C146FB732BCB469600292129 /* URLRequestDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestDescription.swift; sourceTree = "<group>"; };
+		C146FB752BCB489100292129 /* StringUrlSafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUrlSafe.swift; sourceTree = "<group>"; };
+		C146FB772BCB49D100292129 /* RequestHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHeaders.swift; sourceTree = "<group>"; };
+		C146FB792BCB4C5800292129 /* RequestRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRoute.swift; sourceTree = "<group>"; };
+		C146FB7B2BCB4E7A00292129 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		C146FB7D2BCB538A00292129 /* BaseLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		C146FB582BCB443C00292129 /* AppBase */ = {
 			isa = PBXGroup;
 			children = (
+				C146FB6D2BCB451E00292129 /* Utils */,
 				C146FB592BCB443C00292129 /* AppDelegate.swift */,
 				C146FB5B2BCB443C00292129 /* SceneDelegate.swift */,
 				C146FB5D2BCB443C00292129 /* ViewController.swift */,
@@ -65,6 +82,37 @@
 				C146FB672BCB443D00292129 /* Info.plist */,
 			);
 			path = AppBase;
+			sourceTree = "<group>";
+		};
+		C146FB6D2BCB451E00292129 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C146FB7F2BCB539500292129 /* Log */,
+				C146FB6E2BCB453200292129 /* Api */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C146FB6E2BCB453200292129 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				C146FB712BCB45F600292129 /* ApiClientBase.swift */,
+				C146FB7B2BCB4E7A00292129 /* ApiError.swift */,
+				C146FB6F2BCB459500292129 /* ApiSettings.swift */,
+				C146FB772BCB49D100292129 /* RequestHeaders.swift */,
+				C146FB792BCB4C5800292129 /* RequestRoute.swift */,
+				C146FB752BCB489100292129 /* StringUrlSafe.swift */,
+				C146FB732BCB469600292129 /* URLRequestDescription.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		C146FB7F2BCB539500292129 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C146FB7D2BCB538A00292129 /* BaseLogger.swift */,
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +186,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C146FB722BCB45F600292129 /* ApiClientBase.swift in Sources */,
 				C146FB5E2BCB443C00292129 /* ViewController.swift in Sources */,
 				C146FB5A2BCB443C00292129 /* AppDelegate.swift in Sources */,
+				C146FB7C2BCB4E7A00292129 /* ApiError.swift in Sources */,
+				C146FB7E2BCB538A00292129 /* BaseLogger.swift in Sources */,
+				C146FB7A2BCB4C5800292129 /* RequestRoute.swift in Sources */,
+				C146FB702BCB459500292129 /* ApiSettings.swift in Sources */,
+				C146FB782BCB49D100292129 /* RequestHeaders.swift in Sources */,
+				C146FB742BCB469600292129 /* URLRequestDescription.swift in Sources */,
+				C146FB762BCB489100292129 /* StringUrlSafe.swift in Sources */,
 				C146FB5C2BCB443C00292129 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = semyonish.AppBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,6 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = semyonish.AppBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
